@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/ytd.ico</file>
+    </qresource>
+</RCC>
