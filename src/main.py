@@ -45,6 +45,7 @@ class Window(QWidget):
 
     def _download_video_clicked(self):
         def progress(stream, chunk, bytes_remaining):
+            #Update progress bar
             size = stream.filesize
             p = int((float(size-bytes_remaining)/float(size))*100)
             self.ui.progressBar.setValue(p)
@@ -59,9 +60,11 @@ class Window(QWidget):
             self.close()
         except Exception as ex:
             msgbox('Error', str(ex))
+            self.ui.progressBar.setValue(0)
 
     def _download_audio_clicked(self):
         def progress(stream, chunk, bytes_remaining):
+            #Update progress bar
             size = stream.filesize
             p = int((float(size-bytes_remaining)/float(size))*100)
             self.ui.progressBar.setValue(p)
@@ -80,6 +83,7 @@ class Window(QWidget):
             self.close()
         except Exception as ex:
             msgbox('Error', str(ex))
+            self.ui.progressBar.setValue(0)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
