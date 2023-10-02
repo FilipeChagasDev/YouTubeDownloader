@@ -10,7 +10,9 @@ Credits to [remix-icon](https://www.iconfinder.com/remix-icon) for the icon.
 
 ## Download
 
-You can download a Windows executable of the YouTube Downloader here.
+You can download a Windows executable of the YouTube Downloader on the following link:
+
+* https://github.com/FilipeChagasDev/YouTubeDownloader/releases/download/1.0.0/YouTubeDownloader.exe
 
 ##Source Code
 
